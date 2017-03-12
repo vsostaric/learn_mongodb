@@ -20,7 +20,16 @@ describe('Reading users', () => {
     User.find({
       name: 'Joe'
     }).then((users) => {
-      assert(users[0]._id.toString() === joe._id.toString()); 
+      assert(users[0]._id.toString() === joe._id.toString());
+      done();
+    });
+
+  });
+
+  it('Find a user with particular id', (done) => {
+
+    User.findOne(joe).then((user) => {
+      assert(user._id.toString() === joe._id.toString());
       done();
     });
 
