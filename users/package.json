@@ -1,7 +1,6 @@
 {
   "name": "users",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -12,5 +11,9 @@
     "mocha": "^3.2.0",
     "mongoose": "^4.8.6",
     "nodemon": "^1.11.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
 }
