@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
 
 const userSchema = new Schema({
-  name: String
+  name: String,
+  postCount: Number
 });
 
 const User = mongoose.model('user', userSchema);
